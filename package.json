@@ -4,15 +4,14 @@
   "description": "warisamir",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js",
+    "start": "node server",
+    "server": "nodemon server",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "build": "npm run build --prefix client",
-    "vercel": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "prod": "set NODE_OPTIONS=--openssl-legacy-provider && npm install --prefix client && npm run build --prefix client && npm run dev"
   },
   "keywords": [],
-  "author": "salih18",
+  "author": "waris1918",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
