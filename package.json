@@ -4,11 +4,13 @@
   "description": "warisamir",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
-    "server": "nodemon server",
+    "start": "node server.js",
+    "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "prod": "set NODE_OPTIONS=--openssl-legacy-provider && npm install --prefix client && npm run build --prefix client && npm run dev"
+    "build:client": "export NODE_OPTIONS=--openssl-legacy-provider && npm install --prefix client && npm run build --prefix client",
+    "build": "npm run build:client && npm run server",
+    "prod": "npm run build:client && npm run server"
   },
   "keywords": [],
   "author": "waris1918",
