@@ -1,0 +1,5 @@
+[{
+    "mongouri": "mongodb+srv://warisamir1918:waris1918@cluster0.zji50e8.mongodb.net/todo?retryWrites=true&w=majority&appName=Cluster0",
+    "jwtsecret": "secret_warisamir"
+}]
+  
