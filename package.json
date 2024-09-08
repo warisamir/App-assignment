@@ -10,7 +10,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
-  "author": "salih18",
+  "author": "waris1918",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
